@@ -1,7 +1,6 @@
 const arrayNew = [];
-let element;
 while (!arrayNew.includes(null)) {
-    element = arrayNew.push(prompt('Enter numbers'))
+    arrayNew.push(prompt('Enter numbers'))
 }
 arrayNew.pop();
 console.log(`The state of the array is as follows: ${arrayNew}`)
