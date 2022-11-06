@@ -1,5 +1,5 @@
 const arrayNew = [];
-while (!arrayNew.includes(null)) {
+while (!arrayNew.includes(null) && !arrayNew.some(isNaN)) {
     arrayNew.push(prompt('Enter numbers'))
 }
 arrayNew.pop();
