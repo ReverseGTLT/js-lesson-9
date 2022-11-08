@@ -1,8 +1,12 @@
 const arrayNew = [];
-while (!arrayNew.includes(null) && !arrayNew.some(isNaN)) {
-    arrayNew.push(prompt('Enter numbers'))
+while (true) {
+    let element = prompt('Enter numbers');
+    if (element === null || isNaN(+element)) {
+        break;
+    }
+    arrayNew.push(element)
 }
-arrayNew.pop();
+
 console.log(`The state of the array is as follows: ${arrayNew.join(', ')}`)
 arrayNew.sort(function (a, b) {
     return a - b;
